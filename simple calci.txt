@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main(){
+
+    int firstNumber, secondNumber;
+    char op;
+
+    printf("Enter the first number : ");
+    scanf("%d",&firstNumber);
+
+    printf("Enter the second number : ");
+    scanf("%d",&secondNumber);
+
+    printf("Enter the operation");
+    printf("\nFor addition enter + ");
+    printf("\nFor subtraction  enter - ");
+    printf("\nFor multiplication enter * ");
+    printf("\nFor division enter / : ");
+    scanf(" %c",&op);
+
+    if(op == '+') 
+       { printf("The sum of %d and %d = %d",firstNumber,secondNumber,(firstNumber+secondNumber));
+       }
+    else if(op == '-') 
+        {printf("The subtraction of %d and %d = %d",firstNumber,secondNumber,(firstNumber-secondNumber));
+        }
+    else if(op == '*') 
+       { printf("The multiplication of %d and %d = %d",firstNumber,secondNumber,(firstNumber*secondNumber));
+       }
+    else if(op == '/') 
+       { printf("The division of %d and %d = %d",firstNumber,secondNumber,(firstNumber/secondNumber));
+       }
+    else{
+        printf("Invalid Input");
+    }
+
+    return 0;
+}
