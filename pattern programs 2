@@ -1,0 +1,20 @@
+#same number in triangle pattern
+r=int(input("enter number of row needed:"))
+for i in range(1, r):
+   for j in range(1, i+1):
+       print(i, end=" ")
+   print( )
+   
+#same number in ascending order   
+r=int(input("enter number of rows needed:"))
+n= 0
+for i in range(r,0,-1):
+    n+= 1
+    for j in range(1,i +1):
+        print(n, end=" ")
+    print()
+    
+#same number in triangle shape
+r=int(input("enter number of row needed:"))
+    
+    
