@@ -1,0 +1,31 @@
+# min/max element of an array
+numbers= [8,2,4,12,35,100,23,9,10]
+numbers.sort()
+s=len(numbers)
+print("Minimum element in array:",numbers[0])
+print("Maximum element in array:",numbers[s-1])
+
+# duplicate element in ana array
+arr = [5,7,3,8,9,4,12,45,3,6,7,8,25,12]
+print("Duplicate element in given array:")
+for i in range(0,len(arr)):
+   for j in range(i+1, len(arr)):
+       if (arr[i] == arr[j]):
+           print(arr[j])
+
+# odd\even numbers in array
+arr =[]
+s = int(input("Enter the size of the array:"))
+print("Enter the element of array:")
+for i in range(0,s):
+    num=int(input())
+    arr.append(num)
+print("Odd numbers are:")
+for i in range(0,s):
+    if(arr[i]%2!=0):
+        print(arr[i],end="")
+print("\n Even numbers are:")
+for i in range(0,s):
+    if(arr[i]%2==0):
+        print(arr[i],end="")
+
