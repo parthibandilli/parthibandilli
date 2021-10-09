@@ -1,0 +1,71 @@
+TEST-1
+# finding given number is positive or not.
+a=int(input("Enter number: "))
+if(a>0):
+    print("Number is positive")
+else:
+    print("Number is negative")
+
+# sum of Fibonacci series
+def fibsum(n):
+   if n==0 or n==1:
+       print(n)
+   else:
+       sum=0
+       a=0
+       b=1
+       sum=a+b
+       for i in range(2,n+1):
+           c=a+b
+           sum+=c
+           a=b
+           b=c
+       print(sum)
+fibsum(5)
+
+# square pattern
+side = int(input("Enter any Side of a Square  : "))
+print("Hollow Square Star Pattern")
+for i in range(side):
+    for j in range(side):
+        if(i == 0 or i == side-1 or j == 0 or j == side-1):
+            print('*', end = ' ')
+        else:
+            print(' ', end = ' ')
+    print()
+
+TEST-2
+#reverse a string
+string=("Good")
+str=""
+for i in string:
+    str=i+str
+print("Reversed string:",str)
+
+#sort a string
+string=input("ENTER THE STRING:") 
+new_string=""
+liststring=list(string) 
+len_liststring=len(liststring) 
+for i in range(len_liststring-1): 
+    for j in range(len_liststring-i-1): 
+        if liststring[j]>liststring[j+1]: 
+          liststring[j],liststring[j+1]=liststring[j+1],liststring[j] 
+for m in liststring: 
+    new_string+=m 
+print(new_string,"is the sorted string") 
+
+#sum of all pair of element
+def findpair(a,s):
+    n=len(a)
+    for i in range(0,n-1):       
+        for j in range(i+1,n):
+            if(a[i]+a[j]==s):
+                print("Pair",i+1,":",end="")
+                print(a[i],a[j])
+a=[1,4,7,5,9,3]
+s=10
+findpair(a,s)
+
+
+
