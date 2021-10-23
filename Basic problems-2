@@ -1,6 +1,3 @@
-#printing prime and non prime numbers
-import math
-
 #Find sum of abs different
 t=[1,2,3,4]
 a=[]
