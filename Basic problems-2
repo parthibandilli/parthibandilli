@@ -1,0 +1,43 @@
+#printing prime and non prime numbers
+import math
+
+#Find sum of abs different
+t=[1,2,3,4]
+a=[]
+for i in range(len(t)-1):
+    v=t[i+1]-t[i]
+    a.append(v)
+sum=0
+for j in range(0,len(a)):
+    sum=sum+a[j]
+print(sum)
+
+
+#printing prime and non prime numbers
+import math
+def is_not_prime(n):
+    ans = False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            ans = True
+    return ans
+print("Nonprime numbers between 1 to 20:")
+for x in filter(is_not_prime, range(1, 20)):
+    print(x)
+
+
+#Find runnerup score
+a=[1,4,2,6,6,5]
+b=set(a)
+c=list(b)
+c.sort()
+print("Runnerup score is",c[-2])
+
+
+#Missing element in array
+a = [1,2,3,4,5,8,9,10]
+element = []
+for i in range(a[0], a[-1]+1):
+    if i not in a:
+        element.append(i)
+print (missing_element)
