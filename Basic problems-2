@@ -1,5 +1,5 @@
 #Find sum of abs different
-t=[1,2,3,4]
+t=[1,2,6,4,5]
 t.sort()
 a=[]
 for i in range(len(t)-1):
