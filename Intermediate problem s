@@ -1,0 +1,58 @@
+#Finding sum of next gratest number
+num=int(input("Enter Your Number : "))
+L=len(str(N));
+n=num;
+p=0;
+q=0;
+A=[];
+B=[];
+a,b,s,a1,b1,s1=0,0,0,0,0,0;
+temp=num;
+for i in range(0,L):
+    a=n%10;
+    s=s+a;
+    b=n-a;
+    n=int(b/10);
+for j in range(0,51):
+    temp+=1;
+    A.append(temp);
+for a in range(0,51):
+    q=A[a];
+    p=q;
+    for b in range(0,L):
+        a1=p%10;
+        s1=s1+a1;
+        b1=p-a1;
+        p=int(b1/10);
+    B.append(s1);
+    s1=0;
+for c in range(0,51):
+    if(s==B[c]):
+        print("Output : ",A[c]);
+        break;
+
+#Delete more than 2 letters
+
+A=[];
+l=[];
+string=" "
+string=input("Enter Your String :")
+p,q,z,k=0,0,0,0;
+M=" "
+n=len(str(string));
+for p in range(0,n):
+    l.append(string[p]);
+for i in range(0,n-2):
+    p=i;
+    if(string[i]==string[i+1]):
+        if(string[i+1]==string[i+2]):
+            A.append(p);
+q=len(A);
+for j in range(0,q):
+    z=A[j]-k;
+    M=str(l[z]);
+    l.remove(M);
+    k+=1;
+m=' '.join(l);
+print(" Your Output String is : ",m);
+    
